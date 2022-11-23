@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-WORKDIR /OnearmedBandits
+WORKDIR /One-armedBandits
 
 RUN apt-get update -q \
     && apt-get install -y \
@@ -7,7 +7,7 @@ RUN apt-get update -q \
     && rm -rf /var/lib/apt/lists/*
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
-COPY .. /OnearmedBandits
+COPY . /One-armedBandits
 RUN pip install -r requirements.txt --no-cache-dir
 
 CMD ["bash", "run_app.sh"]
