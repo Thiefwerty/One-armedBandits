@@ -73,7 +73,8 @@ class ThompsonAgent(BaseAgent):
 
     def choose_bandit(self):
         """
-        This function samples theta values based on the beta distributions of the environment parameters, and then selects the bandit with the maximum theta value
+        This function samples theta values based on the beta distributions of the environment parameters,
+        and then selects the bandit with the maximum theta value
 
         Returns:
             bandit_number: Number of the bandit chosen by the agent at the current step
