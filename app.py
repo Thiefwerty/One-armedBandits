@@ -10,7 +10,7 @@ AGENTS = {"egreedy": EGreedyAgent, "thompson": ThompsonAgent}
 
 def create_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bandit-number", type=int, required=True)
+    parser.add_argument("--bandits-number", type=int, required=True)
     parser.add_argument("--probabilities", type=float, nargs="+", required=True)
     parser.add_argument("--agent-cls", type=str, required=True)
     parser.add_argument("--epsilon", type=float, required=False)
@@ -21,7 +21,7 @@ parser = create_parser()
 args, _ = parser.parse_known_args()
 
 environment = Environment(
-    bandits_number=args.bandit_number, probabilities=args.probabilities
+    bandits_number=args.bandits_number, probabilities=args.probabilities
 )
 
 if args.agent_cls == "egreedy":
