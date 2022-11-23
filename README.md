@@ -19,7 +19,7 @@ To configure the environment and agent parameters, you must specify the values o
     egreedy for Epsilon Greedy Alghoritm
     thompson Thompson Sampling Alghoritm
     
---bandit-number - number of bandit in envinronment
+--bandits-number - number of bandit in envinronment
 
 --probabilities - probabilities list of receiving reward for each bandit
 
